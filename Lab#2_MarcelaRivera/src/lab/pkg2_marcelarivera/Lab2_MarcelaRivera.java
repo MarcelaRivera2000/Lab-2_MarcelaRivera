@@ -24,14 +24,20 @@ public class Lab2_MarcelaRivera {
                     System.out.println("Cual es la posicion del personaje que dessea modificar: ");
                     int posi=leer.nextInt();
                     creacion();
-                    
-
+                    historial.set(posi, new Personajes());
                     break;
                 case 3:
+                    for (Object h : historial) {
+                        System.out.println(h);
+                    }
                     break;
                 case 4:
+                     System.out.println("Cual es la posicion del personaje que dessea eliminar: ");
+                     posi=leer.nextInt();
+                     historial.remove(posi);
                     break;
                 case 5:
+                    
                     break;
                 case 6:
                     System.exit(0);
